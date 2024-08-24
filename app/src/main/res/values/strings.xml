@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string-array name="faculty">
+        <item>BCA</item>
+        <item>CSIT</item>
+        <item>BIT</item>
+    </string-array>
+</resources>

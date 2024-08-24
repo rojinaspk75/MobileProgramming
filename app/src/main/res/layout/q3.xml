@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative layout registration form "
+        android:layout_marginBottom="16dp" />
+
+    />
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_below="@id/input_name"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/label_faculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Faculty"
+        android:layout_below="@id/input_address"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_faculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/faculty"
+        android:layout_below="@id/label_faculty"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/label_hobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Hobby"
+        android:layout_below="@id/spinner_faculty"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_dancing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dancing"
+        android:layout_below="@id/label_hobby"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_singing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singing"
+        android:layout_below="@id/checkbox_dancing"
+        android:layout_marginTop="4dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_designing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designing"
+        android:layout_below="@id/checkbox_singing"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/label_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Gender"
+        android:layout_below="@id/checkbox_designing"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/label_gender"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/radio_group_gender"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
